@@ -4,82 +4,200 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <title>curriculum vitae</title>
 </head>
-  
-<body id="bod">
-  <script lang="JavaScript">
-    alert("Curriculum Vitae");
-
-  </script>
-  <div id="datos">
-    
-    <img src="https://randomuser.me/api/portraits/women/44.jpg" > 
-
-    <h1>Datos personales</h1>
-      <ul>
-        <li><strong>Nombre:</strong>Amanda</li>
-        <li><strong>Apellido:</strong>Soto</li>
-        <li><strong>Edad:</strong>29 años</li>
-        <li><strong>fecha de nac:</strong>03/03/1993</li>
-        <li><strong>Sexo</strong>Fem</li>
-        <li><strong>Domicilio:</strong>Pje. del Indio 1512</li>
-        <li><strong>Ciudad:</strong>Santa Juana</li>
-        <li><strong>Telefono</strong><a href="tel:"601491-0893>601491-0893</a></li>
-        <li><strong>Email:</strong><a href="mailto:"amanda.soto@example.com>amanda.soto@example.com</a></li>
-      </ul>
-    
-    </div>
-
-    </div>
-
-    </div>
-    
-
-  </div>
-  
-
-    </div>
-
-  </div>
-  
-    </div>
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <div class="container">
-        <div class="row">
-          <div class="col" style="background-color: rgb(167, 191, 235);">
-            <h1>Estudios cursados</h1>
-           <li>Escuela Tecnica <cite>"A. Olmos"</cite> Titulo: <strong>Maestro mayor de obras</strong> Año: 2008</li>
-            <br>
-            <li> Universidad Tecnica Nacional. Titulo:<strong>Licenciado en Arquitectura</strong> Año:2014</li>
-
-          </div>
-          <div class="col" style="background-color: rgb(140, 245, 245);">
-            <h1>Antecedentes laborales</h1>
-            <li>2014 al 2019 Empresa Constructora <strong>Arrecifes</strong></li>
-            <br>
-             <li> 2019 al 2022 Empresa de vienes raices <strong>Funes</strong>Cargo:<cite>Consultor</cite></li>
-
-
-          </div>
-
+<body>
+  <!-- MENU ENCABEZADO -->
+  <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">♦ Amanda ♦</a>
         </div>
-
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+  <div class="contenido-banner">
+      <div class="contenedor-img">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
       </div>
-      <link rel="stylesheet" href="css/bootstra.css">
-      <div class="container"> 
-        <div class="row">
-          <div class="col-12" style="background-color: rgb(233, 196, 215);">
-            <h1>Caracteristicas personales y profesionales</h1>
-            <p>Soy una persona responsable, proactiva. Me adapto a los cambios rapidamente. <br>
-            Me gusta trabajar en equipo como individualmente. </p>
-
+      <h1>Amanda Soto</h1>
+      <h2>Arquitecta</h2>
+      <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+  </div>
+</section>
+<!-- SECCION SOBRE MI -->
+<section id="sobremi" class="sobremi">
+  <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Amanda Soto.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+      <div class="fila">
+          <!-- datos de contacto -->
+          <div class="col">
+              <h3>Datos de contacto</h3>
+              <ul>
+                <li><strong>Cargo</strong> <span>FREELANCE</span></li>
+                  <li><strong>Teléfono</strong><a href="tel:"601491-0893> 601491-0893</a></li>
+                  <li><strong>Correo Electrónico</strong> <a href="mailto:"amanda.soto@example.com>amanda.soto@example.com</a></li>
+                  <li><strong>Sitio web</strong> www.example.com</li>
+                  <li><strong>Dirección</strong> Pje. del Indio 1512</li>
+              </ul>
+  </div>
+  <!-- Conocimientos -->
+  <div class="col">
+    <h3>Conocimientos</h3>
+    <div class="contenedor-conocimientos">
+        <div class="conocimientos">
+          <i class="fa-duotone fa-draw-polygon"></i>
+            <span>AUTOCAD</span>
+        </div>
+        <div class="conocimientos">
+          <i class="fa-brands fa-sketch"></i>
+            <span>SKETCH</span>
+        </div>
+        <div class="conocimientos">
+            <i class="fa-solid fa-book"></i>
+            <span>HISTORIA DEL ARTE</span>
+        </div>
+        <div class="conocimientos">
+            <i class="fa-solid fa-camera"></i>
+            <span>FOTOGRAFÍA</span>
+        </div>
+        
+    </div>
+</div>
+</div>
+<button>
+Descargar CV <i class="fa-solid fa-download"></i>
+<span class="overlay"></span>
+</button>
+</div>
+</section>
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+  <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+          <div class="col izquierda">
+              <h3>Estudios cursados</h3>
+              <div class="item izq">
+                  <h4>Licenciado en Arquitectura</h4>
+                  <span class="casa">Universidad Tecnica Nacional</span>
+                  <span class="fecha">2010 - 2014</span>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                  <div class="conectori">
+                      <div class="circuloi"></div>
+                  </div>
+              </div>
+              <div class="item izq">
+                  <h4>Maestro mayor de obras</h4>
+                  <span class="casa">Escuela Tecnica <cite>"A. Olmos"</cite></span>
+                  <span class="fecha">2008 - 2011</span>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                  <div class="conectori">
+                      <div class="circuloi"></div>
+                  </div>
+              </div>
           </div>
 
-        </div>
-
+          <div class="col derecha">
+              <h3>Experiencia de trabajo</h3>
+              <div class="item der">
+                  <h4>Consultor</h4>
+                  <span class="casa">Arrecifes</span>
+                  <span class="fecha">2014 - 2016</span>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                  <div class="conectord">
+                      <div class="circulod"></div>
+                  </div>
+              </div>
+              <div class="item der">
+                  <h4>Ejemplo</h4>
+                  <span class="casa">Nombre de Compañía</span>
+                  <span class="fecha">2016 - 2018</span>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                  <div class="conectord">
+                      <div class="circulod"></div>
+                  </div>
+                </div>
+          </div>
       </div>
-      
+  </div>
+</section>
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+              <input type="text" placeholder="Tú Nombre">
+              <input type="text" placeholder="Número telefónico">
+              <input type="text" placeholder="Dirección de correo">
+              <input type="text" placeholder="Tema">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+              <button>
+                  Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                  <span class="overlay"></span>
+              </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+              <img src="img/ubicacion.jpg" alt="">
+              <div class="info">
+                  <ul>
+                      <li>
+                          <i class="fa-solid fa-location-dot"></i>
+                          Pje. del Indio 1512, Buenos Aires
+                      </li>
+                      <li>
+                          <i class="fa-solid fa-mobile-screen"></i>
+                          Llama: 601491-0893 
+                      </li>
+                      <li>
+                          <i class="fa-solid fa-envelope"></i>
+                          Email: amanda.soto@example.com
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+  </a>
+  <div class="redes">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-skype"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-solid fa-rss"></i></a>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
