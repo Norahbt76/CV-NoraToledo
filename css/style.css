@@ -31,7 +31,7 @@ html{
     font-family: 'Righteous';
     font-size: 36px;
     color: rgb(174, 215, 240);
-    border-color: #fff;
+    border-color: rgb(201,206,208);
 }
 .contenedor-header header ul{
     display: flex;
@@ -39,7 +39,7 @@ html{
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: rgb(201,206,208);
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -413,10 +413,10 @@ footer .redes{
     margin-bottom: 20px;
 }
 footer .redes a{
-    color: #fff;
+    color: rgb(201,206,208);
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid rgb(201,206,208);
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -429,8 +429,8 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color:   rgb(174, 215, 240);
-    color: #fff;
+    background-color:   #fff;
+    color: rgb(201,206,208);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -452,14 +452,14 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: rgb(201,206,208);
+        background-color: #fff;
         width: 180px;
     }
     nav.responsive ul{
         display: block !important;
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgb(201,206,208);
         padding: 10px 0;
     }
 }
